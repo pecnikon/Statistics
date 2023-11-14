@@ -47,6 +47,6 @@ TT < qt(p = 0.05, df = length(zajici)-1) # pokud je tohle pravda, H0 se zamita
 pt(q = TT, df = length(zajici)-1)
 # p = 0.04 < 0.05 -> H0 se zamita
 t.test(x = zajici, alternative = "less", mu = 8)
-
+?t.test
 # v pripade, ze nesplnime predpoklad, dela se Wilcoxonuv test
 wilcox.test(x = zajici, alternative = "less", mu = 8, conf.int = T)
