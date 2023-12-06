@@ -13,7 +13,7 @@ samice = round(rnorm(n = 40, mean = 101, sd = 17), 1)
 # H1: k asortativnimu parovani dochazi (parovani je nenahodne, r!=0)
 
 # graficke reseni
-plot(samice~samci, col = "coral2", bty = "l", pch = "♥", 
+plot(samice~samci, col = "coral3", bty = "l", pch = "♥", cex = 3, 
      main = "Velikost samcu a samic" )
 lines(x = rep(mean(samci), 2), y = c(min(samice), max(samice)))
 lines(x = c(min(samci), max(samci)), y = rep(mean(samice), 2))

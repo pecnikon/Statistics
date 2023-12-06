@@ -78,3 +78,15 @@ t.test(x = bezvlk, y = svlk, var.equal = F, alternative = "greater")
 # df pro dvouvyberovy t test je 78
 # df pro welchuv t test je 77,993
 # df pro dvouvyberovy wilcoxonuv t test je 40 a 40
+
+set.seed(173)
+# H0: nejsou delsi
+# H1: jsou delsi
+original = round(rnorm(n = 40, mean = 7.5, sd = 0.1), digits = 1)
+padelek = round(rnorm(n = 40, mean = 8, sd = 0.1), digits = 1)
+
+shapiro.test(original) # 0.0069
+shapiro.test(padelek)# 0.0065
+
+wilcox.test(x = original, alternative = "less", y = padelek)
+# p = 4.067e-15 < 0.05
