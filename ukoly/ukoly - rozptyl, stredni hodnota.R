@@ -156,16 +156,15 @@ t.test(x = rozdil, alternative = "less")
 # H1: postoupila
 set.seed(42)
 ceta = rnorm(n = 20, mean = 3, sd = 0.1)
-ceta2 = var(ceta) # vyberovy rozptyl
 
 # test normality - H0: je normalni, H1: neni normalni
 shapiro.test(ceta)
 
 # testovaci statistika
+install.packages("EnvStats")
+library(EnvStats)
 varTest(x = ceta, alternative = "less", sigma.squared = 1)
 
-# p hodnota
-pchisq(q = TT, df = 19)
 #_______________________________________________________________________
 
 #11)
