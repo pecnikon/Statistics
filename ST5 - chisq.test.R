@@ -3,8 +3,8 @@
 # teplota - 10x "nizka", 10x "vysoka"
 # pohlavi - 20x nahodne "m" nebo "f"
 
-  teplota = rep(c("nizka", "vysoka"), each = 1000)
-  pohlavi = sample(c("M", "F"), size = 2000, replace = T)
+  teplota = rep(c("nizka", "vysoka"), each = 10)
+  pohlavi = sample(c("M", "F"), size = 20, replace = T)
 
 # hypoteza
   # H0: teplota neovlivnuje pohlavi

@@ -1,6 +1,7 @@
 # 1. ukol
 # a)
 1 - pbinom(q = 14, size = 20, prob = 0.7)
+
 # b)
 plot(dbinom(x = 0:20, size = 20, prob = 0.7), type = "l")
 

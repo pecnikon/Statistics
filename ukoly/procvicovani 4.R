@@ -31,3 +31,10 @@ chisq.test(x = table(x), p = c(80, 60, 40, 30, 6)/216)
 
 
 
+1-ppois(q = 19, lambda = 15)
+
+idk = seq(0, 1, length.out = 100)
+plot(qpois(p = idk, lambda = 15), type = "l")
+
+plot(pnbinom(q = 0:60, size = 2, prob = 1/10, lower.tail = T))
+

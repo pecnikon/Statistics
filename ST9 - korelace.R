@@ -12,6 +12,9 @@ samice = round(rnorm(n = 40, mean = 101, sd = 17), 1)
 # H0: k asortativnimu parovani nedochazi (parovani je nahodne, r=0)
 # H1: k asortativnimu parovani dochazi (parovani je nenahodne, r!=0)
 
+cor.test(samci, samice, alternative = "greater")
+cor.test(samci, samice)
+
 # graficke reseni
 plot(samice~samci, col = "coral3", bty = "l", pch = "♥", cex = 3, 
      main = "Velikost samcu a samic" )

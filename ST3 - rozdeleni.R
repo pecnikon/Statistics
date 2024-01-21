@@ -16,7 +16,7 @@ x=seq(from=2-3*3,
       by=0.01,)
 y = pnorm(q = x, mean = 2, sd = 3)
 plot(y~x, type = "l")
-
+pgeom(q = 6, prob = 0.1)
 
 # kvantilova funkce (osa x - pravdepodobnost, osa y - hodnoty)
 x = seq(from = 0, 
