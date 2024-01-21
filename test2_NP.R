@@ -15,6 +15,6 @@ rozdil = puvodni - opravny
 wilcox.test(x = rozdil, alternative = "less")
 # p = 0.43 > 0.05
 # H0 se nezamita, na pokyny oponentu nema smysl reagovat
-# df = 39
+# df = 40
 
 boxplot(rozdil, notch = T, col = "deeppink3", lwd = 2)
